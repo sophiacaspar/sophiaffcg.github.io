@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../js/responsivetable.js"></script>
+	<script src="../../js/tablesaw.jquery.js"></script>
+	<script src="../../js/tablesaw-init.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Custom -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/navbar_bootstrap.css">
+	<link rel="stylesheet" href="../../css/rowCollapse.css">
+	<link rel="stylesheet" href="../../css/squish.css">
+	<link rel="stylesheet" href="../../css/scroll-freeze.css">
+	<link rel="stylesheet" href="../../css/tablesaw.css">
+	<link rel="stylesheet" href="../../css/click.css">
+
+
+	<title>Tabeller</title>
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./index.html">Testtabeller</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkterbjudande <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../../index.html">3 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_5kol.html">5 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_7kol.html">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produktjämförelse <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="produktjämförelse_3kol.html">3 kolumner</a></li>
+					<li><a href="produktjämförelse_5kol.html">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+					
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sport <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Aktier/fonder <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<!-- TABELLER -->
+<div id="container">
+
+<h1>Produktjämförelse</h1>
+<h2>5 kolumner</h2>
+<hr>
+<div id="radkollaps">
+<h3> Radkollaps </h3>
+
+<table class="rwd-table">
+	<tr>
+		<th>Åtgärder</th>
+		<th>Maxersättning</th>
+		<th>Skydda</th>
+		<th>Vårda</th>
+		<th>Premium</th>
+	</tr>
+	<tr>
+		<td data-th="Åtgärder">Årlig kontroll</td>
+		<td data-th="Maxersättning">850 kr</td>
+		<td style="color:green;" data-th="Skydda">&#10004;</td>
+		<td style="color:green;" data-th="Vårda">&#10004;</td>
+		<td style="color:green;" data-th="Premium">&#10004;</td>
+	</tr>
+	<tr>
+		<td data-th="Åtgärder">Årlig rengöring</td>
+		<td data-th="Maxersättning">600 kr</td>
+		<td style="color:green;" data-th="Skydda">&#10004;</td>
+		<td style="color:green;" data-th="Vårda">&#10004;</td>
+		<td style="color:green;" data-th="Premium">&#10004;</td>
+	</tr>
+	<tr>
+		<td data-th="Åtgärder">Fyllningar</td>
+		<td data-th="Maxersättning">2000 kr</td>
+		<td data-th="Skydda">-</td>
+		<td style="color:green;" data-th="Vårda">&#10004;</td>
+		<td style="color:green;" data-th="Premium">&#10004;</td>
+	</tr>
+	<tr>
+		<td data-th="Åtgärder">Rotkanal</td>
+		<td data-th="Maxersättning">3000 kr</td>
+		<td data-th="Skydda">-</td>
+		<td data-th="Vårda">-</td>
+		<td style="color:green;" data-th="Premium">&#10004;</td>
+	</tr>
+	<tr>
+		<td data-th="Åtgärder">Akut tandvård Sverige</td>
+		<td data-th="Maxersättning">5000 kr</td>
+		<td style="color:green;" data-th="Skydda">&#10004;</td>
+		<td style="color:green;" data-th="Vårda">&#10004;</td>
+		<td style="color:green;" data-th="Premium">&#10004;</td>
+	</tr>
+	</table>
+	</div>
+
+<hr>
+<div id="squish">
+<h3> Squish </h3>
+<table class="responsive" data-compression="5" data-min="10" data-max="16" cellpadding=".1em" cellspacing=".2em">
+	<tr>
+		<th>Åtgärder</th>
+		<th>Maxersättning</th>
+		<th>Skydda</th>
+		<th>Vårda</th>
+		<th>Premium</th>
+	</tr>
+	<tr>
+		<td>Årlig kontroll</td>
+		<td>850 kr</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td>Årlig rengöring</td>
+		<td>600 kr</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td>Fyllningar</td>
+		<td>2000 kr</td>
+		<td style="text-align: center;">-</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td>Rotkanal</td>
+		<td>3000 kr</td>
+		<td style="text-align: center;">-</td>
+		<td style="text-align: center;">-</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td>Akut tandvård Sverige</td>
+		<td>5000 kr</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+</table>
+
+</div>
+
+<hr>
+<div id="skroll">
+<h3> Skroll </h3>
+
+<div id="table-scroll" class="table-scroll">
+  <div class="table-wrap">
+    <table class="main-table">
+    <thead>
+        <tr>
+			<th class="fixed-side" scope="col">Åtgärder</th>
+			<th scope="col">Maxersättning</th>
+			<th scope="col">Skydda</th>
+			<th scope="col">Vårda</th>
+			<th scope="col">Premium</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="fixed-side">Årlig kontroll</td>
+		<td>850 kr</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Årlig rengöring</td>
+		<td>600 kr</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Fyllningar</td>
+		<td>2000 kr</td>
+		<td style="text-align: center;">-</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Rotkanal</td>
+		<td>3000 kr</td>
+		<td style="text-align: center;">-</td>
+		<td style="text-align: center;">-</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Akut tandvård Sverige</td>
+		<td>5000 kr</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+		<td style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+
+<hr>
+<div id="klick">
+<h3> Klick </h3>
+<table class="tablesaw tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+	<thead>
+	<tr>
+		<th class="title tablesaw-swipe-cellpersist" scope="col" data-tablesaw-priority="persist">Åtgärder</th>
+		<th scope="col" class>Maxersättning</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Skydda</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Vårda</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Premium</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Årlig kontroll</td>
+		<td class>850 kr</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Årlig rengöring</td>
+		<td class>600 kr</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Fyllningar</td>
+		<td class>2000 kr</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="text-align: center;">-</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Rotkanal</td>
+		<td class>3000 kr</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="text-align: center;">-</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="text-align: center;">-</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Akut tandvård Sverige</td>
+		<td class>600 kr</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden" style="color:green; text-align: center;">&#10004;</td>
+	</tr>
+	</tbody>
+</table>
+
+<hr>
+
+</div>
+
+
+</div>
+</body>
+</html>

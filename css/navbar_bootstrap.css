@@ -1,0 +1,6 @@
+  .dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #FFA500;  /*change color of links in drop down here*/
+   }

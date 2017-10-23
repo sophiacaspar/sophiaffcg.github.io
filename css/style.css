@@ -1,0 +1,35 @@
+
+
+body {
+  padding: 0 2em;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: #eee;
+  margin-bottom: 5em;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+h2 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #46637F;
+}
+
+h3 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #587da0;
+}
+
+hr {
+  margin-bottom: 3em;
+  margin-top: 3em;
+  border-color: #aaa;
+}

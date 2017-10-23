@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../js/responsivetable.js"></script>
+	<script src="../../js/tablesaw.jquery.js"></script>
+	<script src="../../js/tablesaw-init.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Custom -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/navbar_bootstrap.css">
+	<link rel="stylesheet" href="../../css/rowCollapse.css">
+	<link rel="stylesheet" href="../../css/squish.css">
+	<link rel="stylesheet" href="../../css/scroll-freeze.css">
+	<link rel="stylesheet" href="../../css/tablesaw.css">
+	<link rel="stylesheet" href="../../css/click.css">
+
+
+	<title>Tabeller</title>
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./index.html">Testtabeller</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkterbjudande <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../../index.html">3 kolumner</a></li>
+					<li><a href="produkterbjudande_5kol.html">5 kolumner</a></li>
+					<li><a href="produkterbjudande_7kol.html">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produktjämförelse <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../produktjämförelse/produktjämförelse_3kol.html">3 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_5kol.html">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+					
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sport <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Aktier/fonder <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<!-- TABELLER -->
+<div id="container">
+
+<h1>Produkterbjudande</h1>
+<h2>5 kolumner</h2>
+<hr>
+<div id="radkollaps">
+<h3> Radkollaps </h3>
+
+<table class="rwd-table">
+  <tr>
+    <th>Till</th>
+    <th>Från</th>
+    <th>Hotell</th>
+    <th>När</th>
+    <th>Pris</th>
+  </tr>
+  <tr>
+    <td data-th="Till">Las Palmas, Gran Canaria, Spanien</td>
+    <td data-th="Från">Köpenhamn Kastrup</td>
+    <td data-th="Hotell">Las Lanzas</td>
+    <td data-th="När">1-8/12</td>
+    <td data-th="Pris">2350 kr/person</td>
+  </tr>
+  <tr>
+    <td data-th="Till">Maspalomas, Gran Canaria, Spanien</td>
+    <td data-th="Från">Malmö Sturup</td>
+    <td data-th="Hotell">Colorado Golf</td>
+    <td data-th="När">7-14/12</td>
+    <td data-th="Pris">2425 kr/person</td>
+  </tr>
+  <tr>
+    <td data-th="Till">Funchai, Madeira, Portugal</td>
+    <td data-th="Från">Stockholm Aranda</td>
+    <td data-th="Hotell">Sao Paulo</td>
+    <td data-th="När">28/11-5/12</td>
+    <td data-th="Pris">2425 kr/person</td>
+  </tr>
+    <tr>
+    <td data-th="Till">Istanbul, Turkiet</td>
+    <td data-th="Från">Göteborg Landvetter</td>
+    <td data-th="Hotell">Divas</td>
+    <td data-th="När">1-7/12</td>
+    <td data-th="Pris">2750 kr/person</td>
+  </tr>
+    <tr>
+    <td data-th="Till">Sileme, Malta</td>
+    <td data-th="Från">Köpemhamn Kastrup</td>
+    <td data-th="Hotell">Park</td>
+    <td data-th="När">3-10/1</td>
+    <td data-th="Pris">2812 kr/person</td>
+  </tr>
+    <tr>
+    <td data-th="Till">Hurghada, Egypten</td>
+    <td data-th="Från">Stockholm Arlanda</td>
+    <td data-th="Hotell">Hotell Triton Empire</td>
+    <td data-th="När">1-7/12</td>
+    <td data-th="Pris">2899 kr/person</td>
+  </tr>
+</table>
+</div>
+
+<hr>
+<div id="squish">
+<h3> Squish </h3>
+<table class="responsive" data-compression="5" data-min="10" data-max="16" cellpadding=".1em" cellspacing=".2em">
+	<tr>
+		<th>Till</th>
+		<th>Från</th>
+		<th>Hotell</th>
+		<th>När</th>
+		<th>Pris</th>
+	</tr>
+	<tr>
+		<td>Las Palmas, Gran <br>Canaria, Spanien</td>
+		<td>Köpenhamn Kastrup</td>
+		<td>Las Lanzas</td>
+		<td>1-8/12</td>
+		<td>2350 kr/person</td>
+	</tr>
+	<tr>
+		<td>Maspalomas, Gran <br>Canaria, Spanien</td>
+		<td>Malmö Sturup</td>
+		<td>Colorado Golf</td>
+		<td>7-14/12</td>
+		<td>2425 kr/person</td>
+	</tr>
+	<tr>
+		<td>Funchai, Madeira,<br>Portugal</td>
+		<td>Stockholm Aranda</td>
+		<td>Sao Paulo</td>
+		<td>28/11-5/12</td>
+		<td>2425 kr/person</td>
+	</tr>
+	<tr>
+		<td>Istanbul, Turkiet</td>
+		<td>Göteborg Landvetter</td>
+		<td>Divas</td>
+		<td>1-7/12</td>
+		<td>2750 kr/person</td>
+	</tr>
+	<tr>
+		<td>Sileme, Malta</td>
+		<td>Köpemhamn Kastrup</td>
+		<td>Park</td>
+		<td>3-10/1</td>
+		<td>2812 kr/person</td>
+    </tr>
+    <tr>
+		<td>Hurghada, Egypten</td>
+		<td>Stockholm Arlanda</td>
+		<td>Hotell Triton Empire</td>
+		<td>1-7/12</td>
+		<td>2899 kr/person</td>
+	</tr>
+</table>
+
+</div>
+
+<hr>
+<div id="skroll">
+<h3> Skroll </h3>
+
+<div id="table-scroll" class="table-scroll">
+  <div class="table-wrap">
+    <table class="main-table">
+    <thead>
+        <tr>
+          <th class="fixed-side" scope="col">Till</th>
+          <th scope="col">Från</th>
+          <th scope="col">Hotell</th>
+          <th scope="col">När</th>
+          <th scope="col">Pris</th>
+        </tr>
+      </thead>
+
+
+      <tbody>
+        <tr>
+          <td class="fixed-side">Las Palmas, Gran <br>Canaria, Spanien</td>
+          <td>Köpenhamn Kastrup</td>
+          <td>Las Lanzas</td>
+          <td data-th="När">1-8/12</td>
+          <td>2350 kr/person</td>
+        </tr>
+        <tr>
+          <td class="fixed-side">Maspalomas, Gran <br>Canaria, Spanien</td>
+          <td>Malmö Sturup</td>
+          <td>Colorado Golf</td>
+          <td>7-14/12</td>
+          <td>2425 kr/person</td>
+        </tr>
+        <tr>
+          <td class="fixed-side">Funchai, Madeira,<br>Portugal</td>
+          <td>Stockholm Aranda</td>
+          <td>Sao Paulo</td>
+          <td>28/11-5/12</td>
+          <td>2425 kr/person</td>
+        </tr>
+          <tr>
+          <td class="fixed-side">Istanbul, Turkiet</td>
+          <td>Göteborg Landvetter</td>
+          <td>Divas</td>
+          <td>1-7/12</td>
+          <td>2750 kr/person</td>
+        </tr>
+          <tr>
+          <td class="fixed-side">Sileme, Malta</td>
+          <td>Köpemhamn Kastrup</td>
+          <td>Park</td>
+          <td>3-10/1</td>
+          <td>2812 kr/person</td>
+        </tr>
+          <tr>
+          <td class="fixed-side">Hurghada, Egypten</td>
+          <td>Stockholm Arlanda</td>
+          <td>Hotell Triton Empire</td>
+          <td>1-7/12</td>
+          <td>2899 kr/person</td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+<hr>
+<div id="klick">
+<h3> Klick </h3>
+<table class="tablesaw tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+	<thead>
+	<tr>
+		<th class="title tablesaw-swipe-cellpersist" scope="col" data-tablesaw-priority="persist">Till</th>
+		<th scope="col" class>Från</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Hotell</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">När</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Pris</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Las Palmas, Gran <br>Canaria, Spanien</td>
+		<td class>Köpenhamn Kastrup</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Las Lanzas</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1-8/12</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2350 kr/person</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Maspalomas, Gran <br>Canaria, Spanien</td>
+		<td class>Malmö Sturup</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Colorado Golf</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">7-14/12</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2425 kr/person</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Funchai, Madeira,<br>Portugal</td>
+		<td class>Stockholm Aranda</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Sao Paulo</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">28/11-5/12</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2425 kr/person</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Istanbul, Turkiet</td>
+		<td class>Göteborg Landvetter</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Divas</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1-7/12</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2750 kr/person</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Sileme, Malta</td>
+		<td class>Köpemhamn Kastrup</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Park</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">3-10/1</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2812 kr/person</td>
+    </tr>
+    <tr>
+		<td class="title tablesaw-swipe-cellpersist">Hurghada, Egypten</td>
+		<td class>Stockholm Arlanda</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Hotell Triton Empire</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1-7/12</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2899 kr/person</td>
+	</tr>
+	</tbody>
+</table>
+
+
+
+
+</div>
+<hr>
+
+</div>
+</body>
+</html>

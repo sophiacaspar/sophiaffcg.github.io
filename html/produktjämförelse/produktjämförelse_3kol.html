@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../js/responsivetable.js"></script>
+	<script src="../../js/tablesaw.jquery.js"></script>
+	<script src="../../js/tablesaw-init.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Custom -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/navbar_bootstrap.css">
+	<link rel="stylesheet" href="../../css/rowCollapse.css">
+	<link rel="stylesheet" href="../../css/squish.css">
+	<link rel="stylesheet" href="../../css/scroll-freeze.css">
+	<link rel="stylesheet" href="../../css/tablesaw.css">
+	<link rel="stylesheet" href="../../css/click.css">
+
+
+	<title>Tabeller</title>
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./index.html">Testtabeller</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkterbjudande <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../../index.html">3 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_5kol.html">5 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_7kol.html">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produktjämförelse <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="produktjämförelse_3kol.html">3 kolumner</a></li>
+					<li><a href="produktjämförelse_5kol.html">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+					
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sport <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Aktier/fonder <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<!-- TABELLER -->
+<div id="container">
+
+<h1>Produktjämförelse</h1>
+<h2>3 kolumner</h2>
+<hr>
+<div id="radkollaps">
+<h3> Radkollaps </h3>
+
+<table class="rwd-table">
+  <tr>
+    <th>Specifikation</th>
+    <th>Bankkort original</th>
+    <th>Bankkort premium</th>
+  </tr>
+  <tr>
+    <td data-th="Specifikation">Pris per år</td>
+    <td data-th="Bankkort original">160 kr</td>
+    <td data-th="Bankkort premium">320 kr</td>
+  </tr>
+  <tr>
+    <td data-th="Specifikation">Extrakort</td>
+    <td data-th="Bankkort original">0 kr</td>
+    <td data-th="Bankkort premium">0 kr</td>
+  </tr>
+    <tr>
+    <td data-th="Specifikation">Bonus</td>
+    <td data-th="Bankkort original">1%</td>
+    <td data-th="Bankkort premium">2%</td>
+  </tr>
+  <tr>
+    <td data-th="Specifikation">Swish</td>
+    <td data-th="Bankkort original">Ja</td>
+    <td data-th="Bankkort premium">Ja</td>
+  </tr>
+  <tr>
+    <td data-th="Specifikation">Reseförsäkring</td>
+    <td data-th="Bankkort original">Nej</td>
+    <td data-th="Bankkort premium">Ja</td>
+  </tr>
+</table>
+</div>
+
+<hr>
+<div id="squish">
+<h3> Squish </h3>
+<table class="responsive" data-compression="5" data-min="10" data-max="16" cellpadding=".1em" cellspacing=".2em">
+	<tr>
+	    <th>Specifikation</th>
+	    <th>Bankkort original</th>
+	    <th>Bankkort premium</th>
+	</tr>
+	<tr>
+		<td>Pris per år</td>
+		<td>160 kr</td>
+		<td>320 kr</td>
+	</tr>
+	<tr>
+		<td>Extrakort</td>
+		<td>0 kr</td>
+		<td>0 kr</td>
+	</tr>
+	<tr>
+		<td>Bonus</td>
+		<td>1%</td>
+		<td>2%</td>
+	</tr>
+	<tr>
+		<td>Swish</td>
+		<td>Ja</td>
+		<td>Ja</td>
+	</tr>
+	<tr>
+		<td>Reseförsäkring</td>
+		<td>Nej</td>
+		<td>Ja</td>
+	</tr>
+</table>
+
+</div>
+
+<hr>
+<div id="skroll">
+<h3> Skroll </h3>
+
+<div id="table-scroll" class="table-scroll">
+  <div class="table-wrap">
+    <table class="main-table">
+    <thead>
+        <tr>
+			<th class="fixed-side" scope="col">Specifikation</th>
+			<th scope="col">Bankkort original</th>
+			<th scope="col">Bankkort premium</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="fixed-side">Pris per år</td>
+			<td>160 kr</td>
+			<td>320 kr</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Extrakort</td>
+			<td>0 kr</td>
+			<td>0 kr</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Bonus</td>
+			<td>1%</td>
+			<td>2%</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Swish</td>
+			<td>Ja</td>
+			<td>Ja</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Reseförsäkring</td>
+			<td>Nej</td>
+			<td>Ja</td>
+		</tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+
+<hr>
+<div id="klick">
+<h3> Klick </h3>
+<table class="tablesaw tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+	<thead>
+	<tr>
+		<th class="title tablesaw-swipe-cellpersist" scope="col" data-tablesaw-priority="persist">Specifikation</th>
+		<th scope="col" class>Bankkort original</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Bankkort premium</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Pris per år</td>
+		<td class>160 kr</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">320 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Extrakort</td>
+		<td class>0 kr</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">0 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Bonus</td>
+		<td class>1%</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2%</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Swish</td>
+		<td class>Ja</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Ja</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Reseförsäkring</td>
+		<td class>Nej</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Ja</td>
+	</tr>
+	</tbody>
+</table>
+
+<hr>
+
+</div>
+
+
+</div>
+</body>
+</html>
