@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../js/responsivetable.js"></script>
+	<script src="../../js/tablesaw.jquery.js"></script>
+	<script src="../../js/tablesaw-init.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Custom -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/navbar_bootstrap.css">
+	<link rel="stylesheet" href="../../css/rowCollapse.css">
+	<link rel="stylesheet" href="../../css/squish.css">
+	<link rel="stylesheet" href="../../css/scroll-freeze.css">
+	<link rel="stylesheet" href="../../css/tablesaw.css">
+	<link rel="stylesheet" href="../../css/click.css">
+
+
+	<title>Tabeller</title>
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">Testtabeller</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkterbjudande <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../../index.html">3 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_5kol.html">5 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_7kol.html">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produktjämförelse <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="produktjämförelse_3kol.html">3 kolumner</a></li>
+					<li><a href="produktjämförelse_5kol.html">5 kolumner</a></li>
+					<li><a href="produktjämförelse_7kol.html">7 kolumner</a></li>
+					<li><a href="produktjämförelse_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+					
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sport <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="sport_3kol.html">3 kolumner</a></li>
+					<li><a href="sport_5kol.html">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Aktier/fonder <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<!-- TABELLER -->
+<div id="container">
+
+<h1>Sport</h1>
+<h2>5 kolumner</h2>
+<hr>
+<div id="radkollaps">
+<h3> Radkollaps </h3>
+
+<table class="rwd-table">
+	<tr>
+		<th>Hemmalag</th>
+		<th>Bortalag</th>
+		<th>Dag</th>
+		<th>Tid</th>
+		<th>Liga</th>
+	</tr>
+	<tr>
+		<td data-th="Hemmalag">Arsenal</td>
+		<td data-th="Bortalag">Norwich City</td>
+		<td data-th="Dag">24 oktober</td>
+		<td data-th="Tid">20:45</td>
+		<td data-th="Liga">EFL Cup</td>
+	</tr>
+	<tr>
+		<td data-th="Hemmalag">Chester FC</td>
+		<td data-th="Bortalag">Barrow</td>
+		<td data-th="Dag">24 oktober</td>
+		<td data-th="Tid">20:45</td>
+		<td data-th="Liga">National League</td>
+	</tr>
+	<tr>
+		<td data-th="Hemmalag">Capri</td>
+		<td data-th="Bortalag">Palermo</td>
+		<td data-th="Dag">24 oktober</td>
+		<td data-th="Tid">20:30</td>
+		<td data-th="Liga">Serie B</td>
+	</tr>
+	<tr>
+		<td data-th="Hemmalag">Cartagena</td>
+		<td data-th="Bortalag">Sevilla</td>
+		<td data-th="Dag">24 oktober</td>
+		<td data-th="Tid">20:30</td>
+		<td data-th="Liga">Copa del Rey</td>
+	</tr>
+	<tr>
+		<td data-th="Hemmalag">Bayer Leverkusen</td>
+		<td data-th="Bortalag">Union Berlin</td>
+		<td data-th="Dag">24 oktober</td>
+		<td data-th="Tid">18:30</td>
+		<td data-th="Liga">DFB Cup</td>
+	</tr>
+</table>
+</div>
+
+<hr>
+<div id="squish">
+<h3> Squish </h3>
+<table class="responsive" data-compression="5" data-min="10" data-max="16" cellpadding=".1em" cellspacing=".2em">
+	<tr>
+	    <th>Hemmalag</th>
+	    <th>Bortalag</th>
+	    <th>Dag</th>
+	    <th>Tid</th>
+	    <th>Liga</th>
+	</tr>
+	<tr>
+		<td>Arsenal</td>
+		<td>Norwich City</td>
+		<td>24 oktober</td>
+		<td>20:45</td>
+		<td>EFL Cup</td>
+	</tr>
+	<tr>
+		<td>Chester FC</td>
+		<td>Barrow</td>
+		<td>24 oktober</td>
+		<td>20:45</td>
+		<td>National League</td>
+	</tr>
+	<tr>
+		<td>Capri</td>
+		<td>Palermo</td>
+		<td>24 oktober</td>
+		<td>20:30</td>
+		<td>Serie B</td>
+	</tr>
+	<tr>
+		<td>Cartagena</td>
+		<td>Sevilla</td>
+		<td>24 oktober</td>
+		<td>20:30</td>
+		<td>Copa del Rey</td>
+	</tr>
+	<tr>
+		<td>Bayer Leverkusen</td>
+		<td>Union Berlin</td>
+		<td>24 oktober</td>
+		<td>18:30</td>
+		<td>DFB Cup</td>
+	</tr>
+</table>
+
+</div>
+
+<hr>
+<div id="skroll">
+<h3> Skroll </h3>
+
+<div id="table-scroll" class="table-scroll">
+  <div class="table-wrap">
+    <table class="main-table">
+    <thead>
+        <tr>
+		    <th class="fixed-side" scope="col">Hemmalag</th>
+		    <th scope="col">Bortalag</th>
+		    <th scope="col">Dag</th>
+		    <th scope="col">Tid</th>
+		    <th scope="col">Liga</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="fixed-side" >Arsenal</td>
+			<td>Norwich City</td>
+			<td>24 oktober</td>
+			<td>20:45</td>
+			<td>EFL Cup</td>
+		</tr>
+		<tr>
+			<td class="fixed-side" >Chester FC</td>
+			<td>Barrow</td>
+			<td>24 oktober</td>
+			<td>20:45</td>
+			<td>National League</td>
+		</tr>
+		<tr>
+			<td class="fixed-side" >Capri</td>
+			<td>Palermo</td>
+			<td>24 oktober</td>
+			<td>20:30</td>
+			<td>Serie B</td>
+		</tr>
+		<tr>
+			<td class="fixed-side" >Cartagena</td>
+			<td>Sevilla</td>
+			<td>24 oktober</td>
+			<td>20:30</td>
+			<td>Copa del Rey</td>
+		</tr>
+		<tr>
+			<td class="fixed-side" >Bayer Leverkusen</td>
+			<td>Union Berlin</td>
+			<td>24 oktober</td>
+			<td>18:30</td>
+			<td>DFB Cup</td>
+		</tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+
+<hr>
+<div id="klick">
+<h3> Klick </h3>
+<table class="tablesaw tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+	<thead>
+		<tr>
+			<th class="title tablesaw-swipe-cellpersist" scope="col" data-tablesaw-priority="persist">Hemmalag</th>
+		    <th scope="col" class>Bortalag</th>
+		    <th scope="col" class=" tablesaw-swipe-cellhidden">Dag</th>
+		    <th scope="col" class=" tablesaw-swipe-cellhidden">Tid</th>
+		    <th scope="col" class=" tablesaw-swipe-cellhidden">Liga</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Arsenal</td>
+			<td class>Norwich City</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">24 oktober</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">20:45</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">EFL Cup</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Chester FC</td>
+			<td class>Barrow</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">24 oktober</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">20:45</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">National League</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Capri</td>
+			<td class>Palermo</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">24 oktober</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">20:30</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">Serie B</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Cartagena</td>
+			<td class>Sevilla</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">24 oktober</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">20:30</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">Copa del Rey</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Bayer Leverkusen</td>
+			<td class>Union Berlin</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">24 oktober</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">18:30</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">DFB Cup</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+
+</div>
+
+
+</div>
+</body>
+</html>
