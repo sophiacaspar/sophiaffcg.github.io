@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../js/responsivetable.js"></script>
+	<script src="../../js/tablesaw.jquery.js"></script>
+	<script src="../../js/tablesaw-init.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Custom -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/navbar_bootstrap.css">
+	<link rel="stylesheet" href="../../css/rowCollapse.css">
+	<link rel="stylesheet" href="../../css/squish.css">
+	<link rel="stylesheet" href="../../css/scroll-freeze.css">
+	<link rel="stylesheet" href="../../css/tablesaw.css">
+	<link rel="stylesheet" href="../../css/click.css">
+
+
+	<title>Tabeller</title>
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">Testtabeller</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkterbjudande <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../../index.html">3 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_5kol.html">5 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_7kol.html">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produktjämförelse <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="produktjämförelse_3kol.html">3 kolumner</a></li>
+					<li><a href="produktjämförelse_5kol.html">5 kolumner</a></li>
+					<li><a href="produktjämförelse_7kol.html">7 kolumner</a></li>
+					<li><a href="produktjämförelse_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+					
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sport <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Aktier/fonder <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<!-- TABELLER -->
+<div id="container">
+
+<h1>Produktjämförelse</h1>
+<h2>10 kolumner</h2>
+<hr>
+<div id="radkollaps">
+<h3> Radkollaps </h3>
+
+<table class="rwd-table">
+	<tr>
+		<th>Modellnamn</th>
+		<th>Produkttyp</th>
+		<th>Lagringskapacitet</th>
+		<th>RAM</th>
+		<th>Skärmstorlek</th>
+		<th>Maximal skärmupplösning</th>
+		<th>Typ av operativsystem</th>
+		<th>Mått</th>
+		<th>Vikt</th>
+		<th>Pris</th>
+
+	</tr>
+	<tr>
+		<td data-th="Modellnamn">Apple iPad</td>
+		<td data-th="Produkttyp">Surfplatta</td>
+		<td data-th="Lagringskapacitet">32 GB</td>
+		<td data-th="RAM">-</td>
+		<td data-th="Skärmstorlek">9.7"</td>
+		<td data-th="Maximal skärmupplösning">2048 x 1536</td>
+		<td data-th="Typ av operativsystem">iOS</td>
+		<td data-th="Mått (b x h x d)">16,95 x 24 x 0,75 cm </td>
+		<td data-th="Vikt">469 g</td>
+		<td data-th="Pris">3790 kr</td>
+	</tr>
+	<tr>
+		<td data-th="Modellnamn">Microsoft Surface Pro FJR-00005</td>
+		<td data-th="Produkttyp">Surface</td>
+		<td data-th="Lagringskapacitet">128 GB</td>
+		<td data-th="RAM">4 GB</td>
+		<td data-th="Skärmstorlek">12.3"</td>
+		<td data-th="Maximal skärmupplösning">2736 x 1824</td>
+		<td data-th="Typ av operativsystem">Windows</td>
+		<td data-th="Mått (b x h x d)">29,20 x 0,85 x 20,10 cm</td>
+		<td data-th="Vikt">770 g</td>
+		<td data-th="Pris">9290 kr</td>
+	</tr>
+	<tr>
+		<td data-th="Modellnamn">Acer Iconia One B3-A30</td>
+		<td data-th="Produkttyp">2-i-1 (dator/surfplatta)</td>
+		<td data-th="Lagringskapacitet">16 GB</td>
+		<td data-th="RAM">1 GB</td>
+		<td data-th="Skärmstorlek">10.1"</td>
+		<td data-th="Maximal skärmupplösning">1280 x 800</td>
+		<td data-th="Typ av operativsystem">Android</td>
+		<td data-th="Mått (b x h x d)">25,90 x 16,75 x 0,92 cm</td>
+		<td data-th="Vikt">520 g/td>
+		<td data-th="Pris">1590 kr</td>
+	</tr>
+	<tr>
+		<td data-th="Modellnamn">Samsung Galaxy Tab A 10.1  </td>
+		<td data-th="Produkttyp">Surfplatta</td>
+		<td data-th="Lagringskapacitet">16 GB</td>
+		<td data-th="RAM">2 GB</td>
+		<td data-th="Skärmstorlek">10.1"</td>
+		<td data-th="Maximal skärmupplösning">1920 x 1200 </td>
+		<td data-th="Typ av operativsystem">Android</td>
+		<td data-th="Mått (b x h x d)">15,68 x 25,56 x 0,85 cm</td>
+		<td data-th="Vikt">540 g</td>
+		<td data-th="Pris">2490 kr</td>
+	</tr>
+	<tr>
+		<td data-th="Modellnamn">Lenovo Tab 2 A10-30</td>
+		<td data-th="Produkttyp">Surfplatta</td>
+		<td data-th="Lagringskapacitet">16 GB</td>
+		<td data-th="RAM">1 GB</td>
+		<td data-th="Skärmstorlek">10.1"</td>
+		<td data-th="Maximal skärmupplösning">1280 x 800</td>
+		<td data-th="Typ av operativsystem">Android</td>
+		<td data-th="Mått (b x h x d)">24,70 x 17,10 x 0,89 cm</td>
+		<td data-th="Vikt">525 g</td>
+		<td data-th="Pris">1490 kr</td>
+	</tr>
+	<tr>
+		<td data-th="Modellnamn">Huawei MediaPad T3 10</td>
+		<td data-th="Produkttyp">Surfplatta</td>
+		<td data-th="Lagringskapacitet">16 GB</td>
+		<td data-th="RAM">2 GB</td>
+		<td data-th="Skärmstorlek">9.6"</td>
+		<td data-th="Maximal skärmupplösning">1280 x 800</td>
+		<td data-th="Typ av operativsystem">Android</td>
+		<td data-th="Mått (b x h x d)">22,98 x 15,98 x 0,83</td>
+		<td data-th="Vikt">430 g</td>
+		<td data-th="Pris">1790 kr</td>
+	</tr>
+	<tr>
+		<td data-th="Modellnamn">Toshiba Satellite Click Mini L9W-B-102  </td>
+		<td data-th="Produkttyp">2-i-1 (dator/surfplatta)</td>
+		<td data-th="Lagringskapacitet">32 GB</td>
+		<td data-th="RAM">2 GB</td>
+		<td data-th="Skärmstorlek">8.9"</td>
+		<td data-th="Maximal skärmupplösning">1920 x 1200</td>
+		<td data-th="Typ av operativsystem">Windows</td>
+		<td data-th="Mått (b x h x d)">23,50 x 1,99 x 17,06 cm</td>
+		<td data-th="Vikt">1000 g</td>
+		<td data-th="Pris">3195 kr</td>
+	</tr>
+	<tr>
+		<td data-th="Modellnamn">HP x2 10-p000no  </td>
+		<td data-th="Produkttyp">2-i-1 (dator/surfplatta)</td>
+		<td data-th="Lagringskapacitet">64 GB</td>
+		<td data-th="RAM">2 GB</td>
+		<td data-th="Skärmstorlek">10.1"</td>
+		<td data-th="Maximal skärmupplösning">1280 x 800</td>
+		<td data-th="Typ av operativsystem">Windows</td>
+		<td data-th="Mått (b x h x d)">26,50 x 1,62 x 17 cm</td>
+		<td data-th="Vikt">1009 g</td>
+		<td data-th="Pris">3795 kr</td>
+	</tr>
+	<tr>
+		<td data-th="Modellnamn">Lenovo Tab3 A7-10F </td>
+		<td data-th="Produkttyp">Surfplatta</td>
+		<td data-th="Lagringskapacitet">1 GB</td>
+		<td data-th="RAM">1 GB</td>
+		<td data-th="Skärmstorlek">7"</td>
+		<td data-th="Maximal skärmupplösning">1024 x 600</td>
+		<td data-th="Typ av operativsystem">Android</td>
+		<td data-th="Mått (b x h x d)">11,30 x 19 x 0,99 cm</td>
+		<td data-th="Vikt">300 g</td>
+		<td data-th="Pris">690 kr</td>
+	</tr>
+	</table>
+	</div>
+
+<hr>
+<div id="squish">
+<h3> Squish </h3>
+<table class="responsive" data-compression="8" data-min="4" data-max="12" cellpadding=".1em" cellspacing=".2em">
+	<tr>
+		<th>Modellnamn</th>
+		<th>Produkttyp</th>
+		<th>Lagringskapacitet</th>
+		<th>RAM</th>
+		<th>Skärmstorlek</th>
+		<th>Maximal skärmupplösning</th>
+		<th>Typ av operativsystem</th>
+		<th>Mått</th>
+		<th>Vikt</th>
+		<th>Pris</th>
+
+	</tr>
+	<tr>
+		<td>Apple iPad</td>
+		<td>Surfplatta</td>
+		<td>32 GB</td>
+		<td>-</td>
+		<td>9.7"</td>
+		<td>2048 x 1536</td>
+		<td>iOS</td>
+		<td>16,95 x 24 x 0,75 cm </td>
+		<td>469 g</td>
+		<td>3790 kr</td>
+	</tr>
+	<tr>
+		<td>Microsoft Surface Pro FJR-00005</td>
+		<td>Surface</td>
+		<td>128 GB</td>
+		<td>4 GB</td>
+		<td>12.3"</td>
+		<td>2736 x 1824</td>
+		<td>Windows</td>
+		<td>29,20 x 0,85 x 20,10 cm</td>
+		<td>770 g</td>
+		<td>9290 kr</td>
+	</tr>
+	<tr>
+		<td>Acer Iconia One B3-A30</td>
+		<td>2-i-1 (dator/surfplatta)</td>
+		<td>16 GB</td>
+		<td>1 GB</td>
+		<td>10.1"</td>
+		<td>1280 x 800</td>
+		<td>Android</td>
+		<td>25,90 x 16,75 x 0,92 cm</td>
+		<td>520 g/td>
+		<td>1590 kr</td>
+	</tr>
+	<tr>
+		<td>Samsung Galaxy Tab A 10.1  </td>
+		<td>Surfplatta</td>
+		<td>16 GB</td>
+		<td>2 GB</td>
+		<td>10.1"</td>
+		<td>1920 x 1200 </td>
+		<td>Android</td>
+		<td>15,68 x 25,56 x 0,85 cm</td>
+		<td>540 g</td>
+		<td>2490 kr</td>
+	</tr>
+	<tr>
+		<td>Lenovo Tab 2 A10-30</td>
+		<td>Surfplatta</td>
+		<td>16 GB</td>
+		<td>1 GB</td>
+		<td>10.1"</td>
+		<td>1280 x 800</td>
+		<td>Android</td>
+		<td>24,70 x 17,10 x 0,89 cm</td>
+		<td>525 g</td>
+		<td>1490 kr</td>
+	</tr>
+	<tr>
+		<td>Huawei MediaPad T3 10</td>
+		<td>Surfplatta</td>
+		<td>16 GB</td>
+		<td>2 GB</td>
+		<td>9.6"</td>
+		<td>1280 x 800</td>
+		<td>Android</td>
+		<td>22,98 x 15,98 x 0,83</td>
+		<td>430 g</td>
+		<td>1790 kr</td>
+	</tr>
+	<tr>
+		<td>Toshiba Satellite Click Mini L9W-B-102  </td>
+		<td>2-i-1 (dator/surfplatta)</td>
+		<td>32 GB</td>
+		<td>2 GB</td>
+		<td>8.9"</td>
+		<td>1920 x 1200</td>
+		<td>Windows</td>
+		<td>23,50 x 1,99 x 17,06 cm</td>
+		<td>1000 g</td>
+		<td>3195 kr</td>
+	</tr>
+	<tr>
+		<td>HP x2 10-p000no  </td>
+		<td>2-i-1 (dator/surfplatta)</td>
+		<td>64 GB</td>
+		<td>2 GB</td>
+		<td>10.1"</td>
+		<td>1280 x 800</td>
+		<td>Windows</td>
+		<td>26,50 x 1,62 x 17 cm</td>
+		<td>1009 g</td>
+		<td>3795 kr</td>
+	</tr>
+	<tr>
+		<td>Lenovo Tab3 A7-10F </td>
+		<td>Surfplatta</td>
+		<td>1 GB</td>
+		<td>1 GB</td>
+		<td>7"</td>
+		<td>1024 x 600</td>
+		<td>Android</td>
+		<td>11,30 x 19 x 0,99 cm</td>
+		<td>300 g</td>
+		<td>690 kr</td>
+	</tr>
+</table>
+
+</div>
+
+<hr>
+<div id="skroll">
+<h3> Skroll </h3>
+
+<div id="table-scroll" class="table-scroll">
+  <div class="table-wrap">
+    <table class="main-table">
+    <thead>
+        <tr>
+			<th class="fixed-side" scope="col">Modellnamn</th>
+			<th scope="col">Produkttyp</th>
+			<th scope="col">Lagringskapacitet</th>
+			<th scope="col">RAM</th>
+			<th scope="col">Skärmstorlek</th>
+			<th scope="col">Maximal skärmupplösning</th>
+			<th scope="col">Typ av operativsystem</th>
+			<th scope="col">Mått</th>
+			<th scope="col">Vikt</th>
+			<th scope="col">Pris</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="fixed-side">Apple iPad</td>
+		<td>Surfplatta</td>
+		<td>32 GB</td>
+		<td>-</td>
+		<td>9.7"</td>
+		<td>2048 x 1536</td>
+		<td>iOS</td>
+		<td>16,95 x 24 x 0,75 cm </td>
+		<td>469 g</td>
+		<td>3790 kr</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Microsoft Surface Pro <br>FJR-00005</td>
+		<td>Surface</td>
+		<td>128 GB</td>
+		<td>4 GB</td>
+		<td>12.3"</td>
+		<td>2736 x 1824</td>
+		<td>Windows</td>
+		<td>29,20 x 0,85 x 20,10 cm</td>
+		<td>770 g</td>
+		<td>9290 kr</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Acer Iconia One <br>B3-A30</td>
+		<td>2-i-1 (dator/surfplatta)</td>
+		<td>16 GB</td>
+		<td>1 GB</td>
+		<td>10.1"</td>
+		<td>1280 x 800</td>
+		<td>Android</td>
+		<td>25,90 x 16,75 x 0,92 cm</td>
+		<td>520 g</td>
+		<td>1590 kr</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Samsung Galaxy <br>Tab A 10.1  </td>
+		<td>Surfplatta</td>
+		<td>16 GB</td>
+		<td>2 GB</td>
+		<td>10.1"</td>
+		<td>1920 x 1200 </td>
+		<td>Android</td>
+		<td>15,68 x 25,56 x 0,85 cm</td>
+		<td>540 g</td>
+		<td>2490 kr</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Lenovo Tab 2 A10-30</td>
+		<td>Surfplatta</td>
+		<td>16 GB</td>
+		<td>1 GB</td>
+		<td>10.1"</td>
+		<td>1280 x 800</td>
+		<td>Android</td>
+		<td>24,70 x 17,10 x 0,89 cm</td>
+		<td>525 g</td>
+		<td>1490 kr</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Huawei MediaPad T3 10</td>
+		<td>Surfplatta</td>
+		<td>16 GB</td>
+		<td>2 GB</td>
+		<td>9.6"</td>
+		<td>1280 x 800</td>
+		<td>Android</td>
+		<td>22,98 x 15,98 x 0,83</td>
+		<td>430 g</td>
+		<td>1790 kr</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Toshiba Satellite <br> Mini L9W-B-102  </td>
+		<td>2-i-1 (dator/surfplatta)</td>
+		<td>32 GB</td>
+		<td>2 GB</td>
+		<td>8.9"</td>
+		<td>1920 x 1200</td>
+		<td>Windows</td>
+		<td>23,50 x 1,99 x 17,06 cm</td>
+		<td>1000 g</td>
+		<td>3195 kr</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">HP x2 10-p000no  </td>
+		<td>2-i-1 (dator/surfplatta)</td>
+		<td>64 GB</td>
+		<td>2 GB</td>
+		<td>10.1"</td>
+		<td>1280 x 800</td>
+		<td>Windows</td>
+		<td>26,50 x 1,62 x 17 cm</td>
+		<td>1009 g</td>
+		<td>3795 kr</td>
+	</tr>
+	<tr>
+		<td class="fixed-side">Lenovo Tab3 A7-10F </td>
+		<td>Surfplatta</td>
+		<td>1 GB</td>
+		<td>1 GB</td>
+		<td>7"</td>
+		<td>1024 x 600</td>
+		<td>Android</td>
+		<td>11,30 x 19 x 0,99 cm</td>
+		<td>300 g</td>
+		<td>690 kr</td>
+	</tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+
+<hr>
+<div id="klick">
+<h3> Klick </h3>
+<table class="tablesaw tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+	<thead>
+	<tr>
+		<th class="title tablesaw-swipe-cellpersist" scope="col" data-tablesaw-priority="persist">Modellnamn</th>
+		<th scope="col" class>Produkttyp</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Lagringskapacitet</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">RAM</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Skärmstorlek</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Maximal skärmupplösning</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Typ av operativsystem</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Mått</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Vikt</th>
+		<th scope="col" class=" tablesaw-swipe-cellhidden">Pris</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Apple iPad</td>
+		<td class>Surfplatta</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">32 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">-</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">9.7"</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2048 x 1536</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">iOS</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">16,95 x 24 x 0,75 cm </td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">469 g</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">3790 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Microsoft Surface Pro FJR-00005</td>
+		<td class>Surface</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">128 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">4 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">12.3"</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2736 x 1824</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Windows</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">29,20 x 0,85 x 20,10 cm</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">770 g</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">9290 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Acer Iconia One B3-A30</td>
+		<td class>2-i-1 (dator/surfplatta)</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">16 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">10.1"</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1280 x 800</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Android</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">25,90 x 16,75 x 0,92 cm</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">520 g/td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1590 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Samsung Galaxy Tab A 10.1  </td>
+		<td class>Surfplatta</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">16 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">10.1"</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1920 x 1200 </td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Android</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">15,68 x 25,56 x 0,85 cm</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">540 g</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2490 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Lenovo Tab 2 A10-30</td>
+		<td class>Surfplatta</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">16 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">10.1"</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1280 x 800</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Android</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">24,70 x 17,10 x 0,89 cm</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">525 g</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1490 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Huawei MediaPad T3 10</td>
+		<td class>Surfplatta</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">16 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">9.6"</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1280 x 800</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Android</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">22,98 x 15,98 x 0,83</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">430 g</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1790 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Toshiba Satellite Click Mini L9W-B-102  </td>
+		<td class>2-i-1 (dator/surfplatta)</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">32 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">8.9"</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1920 x 1200</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Windows</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">23,50 x 1,99 x 17,06 cm</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1000 g</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">3195 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">HP x2 10-p000no  </td>
+		<td class>2-i-1 (dator/surfplatta)</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">64 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">2 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">10.1"</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1280 x 800</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Windows</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">26,50 x 1,62 x 17 cm</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1009 g</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">3795 kr</td>
+	</tr>
+	<tr>
+		<td class="title tablesaw-swipe-cellpersist">Lenovo Tab3 A7-10F </td>
+		<td class>Surfplatta</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1 GB</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">7"</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">1024 x 600</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">Android</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">11,30 x 19 x 0,99 cm</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">300 g</td>
+		<td scope="col" class=" tablesaw-swipe-cellhidden">690 kr</td>
+	</tr>
+	</tbody>
+</table>
+
+<hr>
+
+</div>
+
+
+</div>
+</body>
+</html>
