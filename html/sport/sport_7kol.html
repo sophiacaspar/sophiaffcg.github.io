@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../js/responsivetable.js"></script>
+	<script src="../../js/tablesaw.jquery.js"></script>
+	<script src="../../js/tablesaw-init.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Custom -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/navbar_bootstrap.css">
+	<link rel="stylesheet" href="../../css/rowCollapse.css">
+	<link rel="stylesheet" href="../../css/squish.css">
+	<link rel="stylesheet" href="../../css/scroll-freeze.css">
+	<link rel="stylesheet" href="../../css/tablesaw.css">
+	<link rel="stylesheet" href="../../css/click.css">
+
+
+	<title>Tabeller</title>
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">Testtabeller</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkterbjudande <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../../index.html">3 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_5kol.html">5 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_7kol.html">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produktjämförelse <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../produktjämförelse/produktjämförelse_3kol.html">3 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_5kol.html">5 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_7kol.html">7 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+					
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sport <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="sport_3kol.html">3 kolumner</a></li>
+					<li><a href="sport_5kol.html">5 kolumner</a></li>
+					<li><a href="sport_7kol.html">7 kolumner</a></li>
+					<li><a href="sport_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Aktier/fonder <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="#">5 kolumner</a></li>
+					<li><a href="#">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<!-- TABELLER -->
+<div id="container">
+
+<h1>Sport</h1>
+<h2>7 kolumner</h2>
+<hr>
+<div id="radkollaps">
+<h3> Radkollaps </h3>
+
+<table class="rwd-table">
+	<tr>
+		<th>Lag</th>
+		<th>Antal matcher</th>
+		<th>Vunna matcher</th>
+		<th>Oavgjorda matcher</th>
+		<th>Förlorade matcher</th>
+		<th>Gjorda mål</th>
+		<th>Insläppla mål</th>
+	</tr>
+	<tr>
+		<td data-th="Lag">Linköpings FC</td>
+		<td data-th="Antal matcher">19</td>
+		<td data-th="Vunna matcher">15</td>
+		<td data-th="Oavgjorda matcher">2</td>
+		<td data-th="Förlorade matcher">2</td>
+		<td data-th="Gjorda mål">44</td>
+		<td data-th="Insläppta mål">18</td>
+	</tr>
+	<tr>
+		<td data-th="Lag">FC Rosengård</td>
+		<td data-th="Antal matcher">19</td>
+		<td data-th="Vunna matcher">11</td>
+		<td data-th="Oavgjorda matcher">5</td>
+		<td data-th="Förlorade matcher">3</td>
+		<td data-th="Gjorda mål">47</td>
+		<td data-th="Insläppta mål">21</td>
+	</tr>
+	<tr>
+		<td data-th="Lag">Eskilstuna United DFF</td>
+		<td data-th="Antal matcher">19</td>
+		<td data-th="Vunna matcher">11</td>
+		<td data-th="Oavgjorda matcher">5</td>
+		<td data-th="Förlorade matcher">3</td>
+		<td data-th="Gjorda mål">28</td>
+		<td data-th="Insläppta mål">18</td>
+	</tr>
+	<tr>
+		<td data-th="Lag">Piteå IF DFF</td>
+		<td data-th="Antal matcher">19</td>
+		<td data-th="Vunna matcher">8</td>
+		<td data-th="Oavgjorda matcher">5</td>
+		<td data-th="Förlorade matcher">6</td>
+		<td data-th="Gjorda mål">22</td>
+		<td data-th="Insläppta mål">18</td>
+	</tr>
+	<tr>
+		<td data-th="Lag">Djurgårdens IF FF</td>
+		<td data-th="Antal matcher">19</td>
+		<td data-th="Vunna matcher">8</td>
+		<td data-th="Oavgjorda matcher">3</td>
+		<td data-th="Förlorade matcher">8</td>
+		<td data-th="Gjorda mål">27</td>
+		<td data-th="Insläppta mål">30</td>
+	</tr>
+	<tr>
+		<td data-th="Lag">IF Limhamn Bunkeflo</td>
+		<td data-th="Antal matcher">19</td>
+		<td data-th="Vunna matcher">8</td>
+		<td data-th="Oavgjorda matcher">3</td>
+		<td data-th="Förlorade matcher">8</td>
+		<td data-th="Gjorda mål">23</td>
+		<td data-th="Insläppta mål">34</td>
+	</tr>
+	<tr>
+		<td data-th="Lag">Hammarby IF FF</td>
+		<td data-th="Antal matcher">19</td>
+		<td data-th="Vunna matcher">5</td>
+		<td data-th="Oavgjorda matcher">7</td>
+		<td data-th="Förlorade matcher">7</td>
+		<td data-th="Gjorda mål">25</td>
+		<td data-th="Insläppta mål">25</td>
+	</tr>
+</table>
+</div>
+
+<hr>
+<div id="squish">
+<h3> Squish </h3>
+<table class="responsive" data-compression="5" data-min="10" data-max="16" cellpadding=".1em" cellspacing=".2em">
+	<tr>
+		<th>Lag</th>
+		<th>Antal matcher</th>
+		<th>Vunna matcher</th>
+		<th>Oavgjorda matcher</th>
+		<th>Förlorade matcher</th>
+		<th>Gjorda mål</th>
+		<th>Insläppla mål</th>
+	</tr>
+	<tr>
+		<td>Linköpings FC</td>
+		<td>19</td>
+		<td>15</td>
+		<td>2</td>
+		<td>2</td>
+		<td>44</td>
+		<td>18</td>
+	</tr>
+	<tr>
+		<td>FC Rosengård</td>
+		<td>19</td>
+		<td>11</td>
+		<td>5</td>
+		<td>3</td>
+		<td>47</td>
+		<td>21</td>
+	</tr>
+	<tr>
+		<td>Eskilstuna United DFF</td>
+		<td>19</td>
+		<td>11</td>
+		<td>5</td>
+		<td>3</td>
+		<td>28</td>
+		<td>18</td>
+	</tr>
+	<tr>
+		<td>Piteå IF DFF</td>
+		<td>19</td>
+		<td>8</td>
+		<td>5</td>
+		<td>6</td>
+		<td>22</td>
+		<td>18</td>
+	</tr>
+	<tr>
+		<td>Djurgårdens IF FF</td>
+		<td>19</td>
+		<td>8</td>
+		<td>3</td>
+		<td>8</td>
+		<td>27</td>
+		<td>30</td>
+	</tr>
+	<tr>
+		<td>IF Limhamn Bunkeflo</td>
+		<td>19</td>
+		<td>8</td>
+		<td>3</td>
+		<td>8</td>
+		<td>23</td>
+		<td>34</td>
+	</tr>
+	<tr>
+		<td>Hammarby IF FF</td>
+		<td>19</td>
+		<td>5</td>
+		<td>7</td>
+		<td>7</td>
+		<td>25</td>
+		<td>25</td>
+	</tr>
+</table>
+
+</div>
+
+<hr>
+<div id="skroll">
+<h3> Skroll </h3>
+
+<div id="table-scroll" class="table-scroll">
+  <div class="table-wrap">
+    <table class="main-table">
+    <thead>
+        <tr>
+			<th class="fixed-side" scope="col">Lag</th>
+			<th scope="col">Antal matcher</th>
+			<th scope="col">Vunna matcher</th>
+			<th scope="col">Oavgjorda matcher</th>
+			<th scope="col">Förlorade matcher</th>
+			<th scope="col">Gjorda mål</th>
+			<th scope="col">Insläppla mål</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="fixed-side">Linköpings FC</td>
+			<td>19</td>
+			<td>15</td>
+			<td>2</td>
+			<td>2</td>
+			<td>44</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">FC Rosengård</td>
+			<td>19</td>
+			<td>11</td>
+			<td>5</td>
+			<td>3</td>
+			<td>47</td>
+			<td>21</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Eskilstuna United DFF</td>
+			<td>19</td>
+			<td>11</td>
+			<td>5</td>
+			<td>3</td>
+			<td>28</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Piteå IF DFF</td>
+			<td>19</td>
+			<td>8</td>
+			<td>5</td>
+			<td>6</td>
+			<td>22</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Djurgårdens IF FF</td>
+			<td>19</td>
+			<td>8</td>
+			<td>3</td>
+			<td>8</td>
+			<td>27</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">IF Limhamn Bunkeflo</td>
+			<td>19</td>
+			<td>8</td>
+			<td>3</td>
+			<td>8</td>
+			<td>23</td>
+			<td>34</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Hammarby IF FF</td>
+			<td>19</td>
+			<td>5</td>
+			<td>7</td>
+			<td>7</td>
+			<td>25</td>
+			<td>25</td>
+		</tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+
+<hr>
+<div id="klick">
+<h3> Klick </h3>
+<table class="tablesaw tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+	<thead>
+		<tr>
+		    <th class="title tablesaw-swipe-cellpersist" scope="col" data-tablesaw-priority="persist">Lag</th>
+			<th scope="col" class>Antal matcher</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Vunna matcher</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Oavgjorda matcher</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Förlorade matcher</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Gjorda mål</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Insläppla mål</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Linköpings FC</td>
+			<td class>19</td>
+			<td class="title tablesaw-swipe-cellpersist">15</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">2</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">2</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">44</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">18</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">FC Rosengård</td>
+			<td class>19</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">11</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">5</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">3</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">47</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">21</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Eskilstuna United DFF</td>
+			<td class>19</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">11</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">5</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">3</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">28</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">18</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Piteå IF DFF</td>
+			<td class>19</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">8</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">5</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">6</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">22</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">18</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Djurgårdens IF FF</td>
+			<td class>19</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">8</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">3</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">8</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">27</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">30</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">IF Limhamn Bunkeflo</td>
+			<td class>19</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">8</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">3</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">8</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">23</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">34</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Hammarby IF FF</td>
+			<td class>19</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">5</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">7</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">7</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">25</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">25</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+
+</div>
+
+
+</div>
+</body>
+</html>
