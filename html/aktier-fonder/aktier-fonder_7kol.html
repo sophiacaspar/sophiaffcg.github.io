@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../js/responsivetable.js"></script>
+	<script src="../../js/tablesaw.jquery.js"></script>
+	<script src="../../js/tablesaw-init.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Custom -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/navbar_bootstrap.css">
+	<link rel="stylesheet" href="../../css/rowCollapse.css">
+	<link rel="stylesheet" href="../../css/squish.css">
+	<link rel="stylesheet" href="../../css/scroll-freeze.css">
+	<link rel="stylesheet" href="../../css/tablesaw.css">
+	<link rel="stylesheet" href="../../css/click.css">
+
+
+	<title>Tabeller</title>
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">Testtabeller</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkterbjudande <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../../index.html">3 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_5kol.html">5 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_7kol.html">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produktjämförelse <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../produktjämförelse/produktjämförelse_3kol.html">3 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_5kol.html">5 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_7kol.html">7 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+					
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sport <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../sport/sport_3kol.html">3 kolumner</a></li>
+					<li><a href="../sport/sport_5kol.html">5 kolumner</a></li>
+					<li><a href="../sport/sport_7kol.html">7 kolumner</a></li>
+					<li><a href="../sport/sport_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Aktier/fonder <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="aktier-fonder_5kol.html">5 kolumner</a></li>
+					<li><a href="aktier-fonder_7kol.html">7 kolumner</a></li>
+					<li><a href="aktier-fonder_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<!-- TABELLER -->
+<div id="container">
+
+<h1>Aktier/fonder</h1>
+<h2>7 kolumner</h2>
+<hr>
+<div id="radkollaps">
+<h3> Radkollaps </h3>
+
+<table class="rwd-table">
+	<tr>
+		<th>Fond</th>
+		<th>Placering mätt under 1 mån</th>
+		<th>Placering mätt under 1 år</th>
+		<th>Placering mätt under 3 år</th>
+		<th>Placering mätt under 5 år</th>
+		<th>Placering mätt under 10 år</th>
+		<th>Årlig avgift</th>
+	</tr>
+	<tr>
+		<td data-th="Fond">C WorldWide Sweden Small Cap 1A</td>
+		<td data-th="Placering mätt under 1 mån">118/127</td>
+		<td data-th="Placering mätt under 1 år">22/121</td>
+		<td data-th="Placering mätt under 3 år">1/107</td>
+		<td data-th="Placering mätt under 5 år">1/99</td>
+		<td data-th="Placering mätt under 10 år">-</td>
+		<td data-th="Årlig avgift">1,62 %</td>
+	</tr>
+	<tr>
+		<td data-th="Fond">Humle Småbolagsfond</td>
+		<td data-th="Placering mätt under 1 mån">121/127</td>
+		<td data-th="Placering mätt under 1 år">68/121</td>
+		<td data-th="Placering mätt under 3 år">2/107</td>
+		<td data-th="Placering mätt under 5 år">2/99</td>
+		<td data-th="Placering mätt under 10 år">-</td>
+		<td data-th="Årlig avgift">1 %</td>
+	</tr>
+	<tr>
+		<td data-th="Fond">Spiltan Aktiefond Småland</td>
+		<td data-th="Placering mätt under 1 mån">18/127</td>
+		<td data-th="Placering mätt under 1 år">18/121</td>
+		<td data-th="Placering mätt under 3 år">6/107</td>
+		<td data-th="Placering mätt under 5 år">3/99</td>
+		<td data-th="Placering mätt under 10 år">-</td>
+		<td data-th="Årlig avgift">1,51 %</td>
+	</tr>
+	<tr>
+		<td data-th="Fond">Öhman Sweden Micro Cap</td>
+		<td data-th="Placering mätt under 1 mån">91/127</td>
+		<td data-th="Placering mätt under 1 år">86/121</td>
+		<td data-th="Placering mätt under 3 år">5/107</td>
+		<td data-th="Placering mätt under 5 år">4/99</td>
+		<td data-th="Placering mätt under 10 år">1/75</td>
+		<td data-th="Årlig avgift">1,55 %</td>
+	</tr>
+	<tr>
+		<td data-th="Fond">	Carnegie Småbolagsfond</td>
+		<td data-th="Placering mätt under 1 mån">125/127</td>
+		<td data-th="Placering mätt under 1 år">118/121</td>
+		<td data-th="Placering mätt under 3 år">16/107</td>
+		<td data-th="Placering mätt under 5 år">5/99</td>
+		<td data-th="Placering mätt under 10 år">-</td>
+		<td data-th="Årlig avgift">1,66 %</td>
+	</tr>
+	<tr>
+		<td data-th="Fond">SEB Sverigefond Småbolag C/R</td>
+		<td data-th="Placering mätt under 1 mån">24/127</td>
+		<td data-th="Placering mätt under 1 år">93/121</td>
+		<td data-th="Placering mätt under 3 år">3/107</td>
+		<td data-th="Placering mätt under 5 år">6/99</td>
+		<td data-th="Placering mätt under 10 år">11/75</td>
+		<td data-th="Årlig avgift">1,55 %</td>
+	</tr>
+	<tr>
+		<td data-th="Fond">	Handelsbanken Svenska Småbolag</td>
+		<td data-th="Placering mätt under 1 mån">111/127</td>
+		<td data-th="Placering mätt under 1 år">94/121</td>
+		<td data-th="Placering mätt under 3 år">10/107</td>
+		<td data-th="Placering mätt under 5 år">7/99</td>
+		<td data-th="Placering mätt under 10 år">2/75</td>
+		<td data-th="Årlig avgift">1,55 %</td>
+	</tr>
+</table>
+</div>
+
+<hr>
+<div id="squish">
+<h3> Squish </h3>
+<table class="responsive" data-compression="6" data-min="8" data-max="16" cellpadding=".1em" cellspacing=".2em">
+	<tr>
+		<th>Fond</th>
+		<th>Placering mätt under 1 mån</th>
+		<th>Placering mätt under 1 år</th>
+		<th>Placering mätt under 3 år</th>
+		<th>Placering mätt under 5 år</th>
+		<th>Placering mätt under 10 år</th>
+		<th>Årlig avgift</th>
+	</tr>
+	<tr>
+		<td>C WorldWide Sweden Small Cap 1A</td>
+		<td>118/127</td>
+		<td>22/121</td>
+		<td>1/107</td>
+		<td>1/99</td>
+		<td>-</td>
+		<td>1,62 %</td>
+	</tr>
+	<tr>
+		<td>Humle Småbolagsfond</td>
+		<td>121/127</td>
+		<td>68/121</td>
+		<td>2/107</td>
+		<td>2/99</td>
+		<td>-</td>
+		<td>1 %</td>
+	</tr>
+	<tr>
+		<td>Spiltan Aktiefond Småland</td>
+		<td>18/127</td>
+		<td>18/121</td>
+		<td>6/107</td>
+		<td>3/99</td>
+		<td>-</td>
+		<td>1,51 %</td>
+	</tr>
+	<tr>
+		<td>Öhman Sweden Micro Cap</td>
+		<td>91/127</td>
+		<td>86/121</td>
+		<td>5/107</td>
+		<td>4/99</td>
+		<td>1/75</td>
+		<td>1,55 %</td>
+	</tr>
+	<tr>
+		<td>	Carnegie Småbolagsfond</td>
+		<td>125/127</td>
+		<td>118/121</td>
+		<td>16/107</td>
+		<td>5/99</td>
+		<td>-</td>
+		<td>1,66 %</td>
+	</tr>
+	<tr>
+		<td>SEB Sverigefond Småbolag C/R</td>
+		<td>24/127</td>
+		<td>93/121</td>
+		<td>3/107</td>
+		<td>6/99</td>
+		<td>11/75</td>
+		<td>1,55 %</td>
+	</tr>
+	<tr>
+		<td>	Handelsbanken Svenska Småbolag</td>
+		<td>111/127</td>
+		<td>94/121</td>
+		<td>10/107</td>
+		<td>7/99</td>
+		<td>2/75</td>
+		<td>1,55 %</td>
+	</tr>
+</table>
+
+</div>
+
+<hr>
+<div id="skroll">
+<h3> Skroll </h3>
+
+<div id="table-scroll" class="table-scroll">
+  <div class="table-wrap">
+    <table class="main-table">
+    <thead>
+        <tr>
+			<th class="fixed-side" scope="col">Fond</th>
+			<th scope="col">Placering mätt under 1 mån</th>
+			<th scope="col">Placering mätt under 1 år</th>
+			<th scope="col">Placering mätt under 3 år</th>
+			<th scope="col">Placering mätt under 5 år</th>
+			<th scope="col">Placering mätt under 10 år</th>
+			<th scope="col">Årlig avgift</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="fixed-side">C WorldWide Sweden Small Cap 1A</td>
+			<td>118/127</td>
+			<td>22/121</td>
+			<td>1/107</td>
+			<td>1/99</td>
+			<td>-</td>
+			<td>1,62 %</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Humle Småbolagsfond</td>
+			<td>121/127</td>
+			<td>68/121</td>
+			<td>2/107</td>
+			<td>2/99</td>
+			<td>-</td>
+			<td>1 %</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Spiltan Aktiefond Småland</td>
+			<td>18/127</td>
+			<td>18/121</td>
+			<td>6/107</td>
+			<td>3/99</td>
+			<td>-</td>
+			<td>1,51 %</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Öhman Sweden Micro Cap</td>
+			<td>91/127</td>
+			<td>86/121</td>
+			<td>5/107</td>
+			<td>4/99</td>
+			<td>1/75</td>
+			<td>1,55 %</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">	Carnegie Småbolagsfond</td>
+			<td>125/127</td>
+			<td>118/121</td>
+			<td>16/107</td>
+			<td>5/99</td>
+			<td>-</td>
+			<td>1,66 %</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">SEB Sverigefond Småbolag C/R</td>
+			<td>24/127</td>
+			<td>93/121</td>
+			<td>3/107</td>
+			<td>6/99</td>
+			<td>11/75</td>
+			<td>1,55 %</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">	Handelsbanken Svenska Småbolag</td>
+			<td>111/127</td>
+			<td>94/121</td>
+			<td>10/107</td>
+			<td>7/99</td>
+			<td>2/75</td>
+			<td>1,55 %</td>
+		</tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+
+<hr>
+<div id="klick">
+<h3> Klick </h3>
+<table class="tablesaw tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+	<thead>
+		<tr>
+			<th class="title tablesaw-swipe-cellpersist" scope="col" data-tablesaw-priority="persist">Fond</th>
+			<th scope="col" class>Placering mätt under 1 mån</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Placering mätt under 1 år</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Placering mätt under 3 år</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Placering mätt under 5 år</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Placering mätt under 10 år</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Årlig avgift</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">C WorldWide Sweden Small Cap 1A</td>
+			<td class>118/127</td>
+			<th class=" tablesaw-swipe-cellhidden">22/121</td>
+			<th class=" tablesaw-swipe-cellhidden">1/107</td>
+			<th class=" tablesaw-swipe-cellhidden">1/99</td>
+			<th class=" tablesaw-swipe-cellhidden">-</td>
+			<th class=" tablesaw-swipe-cellhidden">1,62 %</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Humle Småbolagsfond</td>
+			<td class>121/127</td>
+			<th class=" tablesaw-swipe-cellhidden">68/121</td>
+			<th class=" tablesaw-swipe-cellhidden">2/107</td>
+			<th class=" tablesaw-swipe-cellhidden">2/99</td>
+			<th class=" tablesaw-swipe-cellhidden">-</td>
+			<th class=" tablesaw-swipe-cellhidden">1 %</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Spiltan Aktiefond Småland</td>
+			<td class>18/127</td>
+			<th class=" tablesaw-swipe-cellhidden">18/121</td>
+			<th class=" tablesaw-swipe-cellhidden">6/107</td>
+			<th class=" tablesaw-swipe-cellhidden">3/99</td>
+			<th class=" tablesaw-swipe-cellhidden">-</td>
+			<th class=" tablesaw-swipe-cellhidden">1,51 %</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Öhman Sweden Micro Cap</td>
+			<td class>91/127</td>
+			<th class=" tablesaw-swipe-cellhidden">86/121</td>
+			<th class=" tablesaw-swipe-cellhidden">5/107</td>
+			<th class=" tablesaw-swipe-cellhidden">4/99</td>
+			<th class=" tablesaw-swipe-cellhidden">1/75</td>
+			<th class=" tablesaw-swipe-cellhidden">1,55 %</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">	Carnegie Småbolagsfond</td>
+			<td class>125/127</td>
+			<th class=" tablesaw-swipe-cellhidden">118/121</td>
+			<th class=" tablesaw-swipe-cellhidden">16/107</td>
+			<th class=" tablesaw-swipe-cellhidden">5/99</td>
+			<th class=" tablesaw-swipe-cellhidden">-</td>
+			<th class=" tablesaw-swipe-cellhidden">1,66 %</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">SEB Sverigefond Småbolag C/R</td>
+			<td class>24/127</td>
+			<th class=" tablesaw-swipe-cellhidden">93/121</td>
+			<th class=" tablesaw-swipe-cellhidden">3/107</td>
+			<th class=" tablesaw-swipe-cellhidden">6/99</td>
+			<th class=" tablesaw-swipe-cellhidden">11/75</td>
+			<th class=" tablesaw-swipe-cellhidden">1,55 %</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">	Handelsbanken Svenska Småbolag</td>
+			<td class>111/127</td>
+			<th class=" tablesaw-swipe-cellhidden">94/121</td>
+			<th class=" tablesaw-swipe-cellhidden">10/107</td>
+			<th class=" tablesaw-swipe-cellhidden">7/99</td>
+			<th class=" tablesaw-swipe-cellhidden">2/75</td>
+			<th class=" tablesaw-swipe-cellhidden">1,55 %</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+
+</div>
+
+
+</div>
+</body>
+</html>
