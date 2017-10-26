@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../js/responsivetable.js"></script>
+	<script src="../../js/tablesaw.jquery.js"></script>
+	<script src="../../js/tablesaw-init.js"></script>
+	<script type="text/javascript" src="../../js/scroll.js"></script>
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Custom -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/navbar_bootstrap.css">
+	<link rel="stylesheet" href="../../css/rowCollapse.css">
+	<link rel="stylesheet" href="../../css/squish.css">
+	<link rel="stylesheet" href="../../css/scroll-freeze.css">
+	<link rel="stylesheet" href="../../css/tablesaw.css">
+	<link rel="stylesheet" href="../../css/click.css">
+
+
+	<title>Tabeller</title>
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">Testtabeller</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produkterbjudande <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../../index.html">3 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_5kol.html">5 kolumner</a></li>
+					<li><a href="../produkterbjudande/produkterbjudande_7kol.html">7 kolumner</a></li>
+					<li><a href="#">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Produktjämförelse <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../produktjämförelse/produktjämförelse_3kol.html">3 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_5kol.html">5 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_7kol.html">7 kolumner</a></li>
+					<li><a href="../produktjämförelse/produktjämförelse_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+					
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sport <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="../sport/sport_3kol.html">3 kolumner</a></li>
+					<li><a href="../sport/sport_5kol.html">5 kolumner</a></li>
+					<li><a href="../sport/sport_7kol.html">7 kolumner</a></li>
+					<li><a href="../sport/sport_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Aktier/fonder <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					<li><a href="#">3 kolumner</a></li>
+					<li><a href="aktier-fonder_5kol.html">5 kolumner</a></li>
+					<li><a href="aktier-fonder_7kol.html">7 kolumner</a></li>
+					<li><a href="aktier-fonder_10kol.html">10 kolumner</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<!-- TABELLER -->
+<div id="container">
+
+<h1>Aktier/fonder</h1>
+<h2>10 kolumner</h2>
+<hr>
+<div id="radkollaps">
+<h3> Radkollaps </h3>
+
+<table class="rwd-table">
+	<tr>
+		<th>Aktie</th>
+		<th>Senast</th>
+		<th>+/-</th>
+		<th>+/- %</th>
+		<th>Köp</th>
+		<th>Sälj</th>
+		<th>Högst</th>
+		<th>Lägst</th>
+		<th>Volym</th>
+		<th>Tid</th>
+	</tr>
+	<tr>
+		<td data-th="Aktie">Precise Biometrics</td>
+		<td data-th="Senast">2,03</td>
+		<td data-th="+/-">-0,12</td>
+		<td data-th="+/- %">-5,58 %</td>
+		<td data-th="Köp">2,01</td>
+		<td data-th="Sälj">2,04</td>
+		<td data-th="Högst">2,32</td>
+		<td data-th="Lägst">2,00</td>
+		<td data-th="Volym">29 620 850</td>
+		<td data-th="Tid">16:05</td>
+	</tr>
+	<tr>
+		<td data-th="Aktie">Telia Company</td>
+		<td data-th="Senast">37,99</td>
+		<td data-th="+/-">+0,24</td>
+		<td data-th="+/- %">+0,64 %</td>
+		<td data-th="Köp">37,97</td>
+		<td data-th="Sälj">37,99</td>
+		<td data-th="Högst">38,21</td>
+		<td data-th="Lägst">37,74</td>
+		<td data-th="Volym">8 751 709</td>
+		<td data-th="Tid">16:05</td>
+	</tr>
+	<tr>
+		<td data-th="Aktie">SSAB B</td>
+		<td data-th="Senast">33,58</td>
+		<td data-th="+/-">-0,99</td>
+		<td data-th="+/- %">-2,86 %</td>
+		<td data-th="Köp">33,58</td>
+		<td data-th="Sälj">33,60</td>
+		<td data-th="Högst">35,36</td>
+		<td data-th="Lägst">33,17</td>
+		<td data-th="Volym">7 628 291</td>
+		<td data-th="Tid">16:06</td>
+	</tr>
+	<tr>
+		<td data-th="Aktie">Eniro</td>
+		<td data-th="Senast">0,26</td>
+		<td data-th="+/-">+0,02</td>
+		<td data-th="+/- %">+7,29 %</td>
+		<td data-th="Köp">0,26</td>
+		<td data-th="Sälj">0,26</td>
+		<td data-th="Högst">0,26</td>
+		<td data-th="Lägst">0,25</td>
+		<td data-th="Volym">6 961 996</td>
+		<td data-th="Tid">16:05</td>
+	</tr>
+	<tr>
+		<td data-th="Aktie">Mavshack</td>
+		<td data-th="Senast">0,44</td>
+		<td data-th="+/-">-0,05</td>
+		<td data-th="+/- %">-10,20 %</td>
+		<td data-th="Köp">0,43</td>
+		<td data-th="Sälj">0,44</td>
+		<td data-th="Högst">0,51</td>
+		<td data-th="Lägst">0,41</td>
+		<td data-th="Volym">6 942 151</td>
+		<td data-th="Tid">16:04</td>
+	</tr>
+	<tr>
+		<td data-th="Aktie">Ericsson B</td>
+		<td data-th="Senast">54,40</td>
+		<td data-th="+/-">+0,90</td>
+		<td data-th="+/- %">+1,68%</td>
+		<td data-th="Köp">54,35</td>
+		<td data-th="Sälj">54,40</td>
+		<td data-th="Högst">54,45</td>
+		<td data-th="Lägst">53,40</td>
+		<td data-th="Volym">6 663 095</td>
+		<td data-th="Tid">16:05</td>
+	</tr>
+	<tr>
+		<td data-th="Aktie">Abelco Investment Group</td>
+		<td data-th="Senast">0,30</td>
+		<td data-th="+/-">0,00</td>
+		<td data-th="+/- %">0,00 %</td>
+		<td data-th="Köp">0,30</td>
+		<td data-th="Sälj">0,30</td>
+		<td data-th="Högst">0,31</td>
+		<td data-th="Lägst">0,29</td>
+		<td data-th="Volym">6 557 850</td>
+		<td data-th="Tid">16:04</td>
+	</tr>
+	<tr>
+		<td data-th="Aktie">SEB A</td>
+		<td data-th="Senast">102,30</td>
+		<td data-th="+/-">-1,70</td>
+		<td data-th="+/- %">-1,63 %</td>
+		<td data-th="Köp">102,20</td>
+		<td data-th="Sälj">102,30</td>
+		<td data-th="Högst">104,10</td>
+		<td data-th="Lägst">102,00</td>
+		<td data-th="Volym">5 753 483</td>
+		<td data-th="Tid">16:05</td>
+	</tr>
+	<tr>
+		<td data-th="Aktie">Fingerprint Cards B</td>
+		<td data-th="Senast">20,01</td>
+		<td data-th="+/-">-0,00</td>
+		<td data-th="+/- %">0,00 %</td>
+		<td data-th="Köp">20,00</td>
+		<td data-th="Sälj">20,02</td>
+		<td data-th="Högst">20,24</td>
+		<td data-th="Lägst">19,86</td>
+		<td data-th="Volym">4 714 118</td>
+		<td data-th="Tid">16:05</td>
+	</tr>
+</table>
+</div>
+
+<hr>
+<div id="squish">
+<h3> Squish </h3>
+<table class="responsive" data-compression="6" data-min="8" data-max="16" cellpadding=".1em" cellspacing=".2em">
+	<tr>
+		<th>Aktie</th>
+		<th>Senast</th>
+		<th>+/-</th>
+		<th>+/- %</th>
+		<th>Köp</th>
+		<th>Sälj</th>
+		<th>Högst</th>
+		<th>Lägst</th>
+		<th>Volym</th>
+		<th>Tid</th>
+	</tr>
+	<tr>
+		<td>Precise Biometrics</td>
+		<td>2,03</td>
+		<td>-0,12</td>
+		<td>-5,58 %</td>
+		<td>2,01</td>
+		<td>2,04</td>
+		<td>2,32</td>
+		<td>2,00</td>
+		<td>29 620 850</td>
+		<td>16:05</td>
+	</tr>
+	<tr>
+		<td>Telia Company</td>
+		<td>37,99</td>
+		<td>+0,24</td>
+		<td>+0,64 %</td>
+		<td>37,97</td>
+		<td>37,99</td>
+		<td>38,21</td>
+		<td>37,74</td>
+		<td>8 751 709</td>
+		<td>16:05</td>
+	</tr>
+	<tr>
+		<td>SSAB B</td>
+		<td>33,58</td>
+		<td>-0,99</td>
+		<td>-2,86 %</td>
+		<td>33,58</td>
+		<td>33,60</td>
+		<td>35,36</td>
+		<td>33,17</td>
+		<td>7 628 291</td>
+		<td>16:06</td>
+	</tr>
+	<tr>
+		<td>Eniro</td>
+		<td>0,26</td>
+		<td>+0,02</td>
+		<td>+7,29 %</td>
+		<td>0,26</td>
+		<td>0,26</td>
+		<td>0,26</td>
+		<td>0,25</td>
+		<td>6 961 996</td>
+		<td>16:05</td>
+	</tr>
+	<tr>
+		<td>Mavshack</td>
+		<td>0,44</td>
+		<td>-0,05</td>
+		<td>-10,20 %</td>
+		<td>0,43</td>
+		<td>0,44</td>
+		<td>0,51</td>
+		<td>0,41</td>
+		<td>6 942 151</td>
+		<td>16:04</td>
+	</tr>
+	<tr>
+		<td>Ericsson B</td>
+		<td>54,40</td>
+		<td>+0,90</td>
+		<td>+1,68%</td>
+		<td>54,35</td>
+		<td>54,40</td>
+		<td>54,45</td>
+		<td>53,40</td>
+		<td>6 663 095</td>
+		<td>16:05</td>
+	</tr>
+	<tr>
+		<td>Abelco Investment Group</td>
+		<td>0,30</td>
+		<td>0,00</td>
+		<td>0,00 %</td>
+		<td>0,30</td>
+		<td>0,30</td>
+		<td>0,31</td>
+		<td>0,29</td>
+		<td>6 557 850</td>
+		<td>16:04</td>
+	</tr>
+	<tr>
+		<td>SEB A</td>
+		<td>102,30</td>
+		<td>-1,70</td>
+		<td>-1,63 %</td>
+		<td>102,20</td>
+		<td>102,30</td>
+		<td>104,10</td>
+		<td>102,00</td>
+		<td>5 753 483</td>
+		<td>16:05</td>
+	</tr>
+	<tr>
+		<td>Fingerprint Cards B</td>
+		<td>20,01</td>
+		<td>-0,00</td>
+		<td>0,00 %</td>
+		<td>20,00</td>
+		<td>20,02</td>
+		<td>20,24</td>
+		<td>19,86</td>
+		<td>4 714 118</td>
+		<td>16:05</td>
+	</tr>
+</table>
+
+</div>
+
+<hr>
+<div id="skroll">
+<h3> Skroll </h3>
+
+<div id="table-scroll" class="table-scroll">
+  <div class="table-wrap">
+    <table class="main-table">
+    <thead>
+        <tr>
+			<th class="fixed-side" scope="col">Aktie</th>
+			<th scope="col">Senast</th>
+			<th scope="col">+/-</th>
+			<th scope="col">+/- %</th>
+			<th scope="col">Köp</th>
+			<th scope="col">Sälj</th>
+			<th scope="col">Högst</th>
+			<th scope="col">Lägst</th>
+			<th scope="col">Volym</th>
+			<th scope="col">Tid</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="fixed-side">Precise Biometrics</td>
+			<td>2,03</td>
+			<td>-0,12</td>
+			<td>-5,58 %</td>
+			<td>2,01</td>
+			<td>2,04</td>
+			<td>2,32</td>
+			<td>2,00</td>
+			<td>29 620 850</td>
+			<td>16:05</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Telia Company</td>
+			<td>37,99</td>
+			<td>+0,24</td>
+			<td>+0,64 %</td>
+			<td>37,97</td>
+			<td>37,99</td>
+			<td>38,21</td>
+			<td>37,74</td>
+			<td>8 751 709</td>
+			<td>16:05</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">SSAB B</td>
+			<td>33,58</td>
+			<td>-0,99</td>
+			<td>-2,86 %</td>
+			<td>33,58</td>
+			<td>33,60</td>
+			<td>35,36</td>
+			<td>33,17</td>
+			<td>7 628 291</td>
+			<td>16:06</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Eniro</td>
+			<td>0,26</td>
+			<td>+0,02</td>
+			<td>+7,29 %</td>
+			<td>0,26</td>
+			<td>0,26</td>
+			<td>0,26</td>
+			<td>0,25</td>
+			<td>6 961 996</td>
+			<td>16:05</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Mavshack</td>
+			<td>0,44</td>
+			<td>-0,05</td>
+			<td>-10,20 %</td>
+			<td>0,43</td>
+			<td>0,44</td>
+			<td>0,51</td>
+			<td>0,41</td>
+			<td>6 942 151</td>
+			<td>16:04</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Ericsson B</td>
+			<td>54,40</td>
+			<td>+0,90</td>
+			<td>+1,68%</td>
+			<td>54,35</td>
+			<td>54,40</td>
+			<td>54,45</td>
+			<td>53,40</td>
+			<td>6 663 095</td>
+			<td>16:05</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Abelco Investment Group</td>
+			<td>0,30</td>
+			<td>0,00</td>
+			<td>0,00 %</td>
+			<td>0,30</td>
+			<td>0,30</td>
+			<td>0,31</td>
+			<td>0,29</td>
+			<td>6 557 850</td>
+			<td>16:04</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">SEB A</td>
+			<td>102,30</td>
+			<td>-1,70</td>
+			<td>-1,63 %</td>
+			<td>102,20</td>
+			<td>102,30</td>
+			<td>104,10</td>
+			<td>102,00</td>
+			<td>5 753 483</td>
+			<td>16:05</td>
+		</tr>
+		<tr>
+			<td class="fixed-side">Fingerprint Cards B</td>
+			<td>20,01</td>
+			<td>-0,00</td>
+			<td>0,00 %</td>
+			<td>20,00</td>
+			<td>20,02</td>
+			<td>20,24</td>
+			<td>19,86</td>
+			<td>4 714 118</td>
+			<td>16:05</td>
+		</tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+
+<hr>
+<div id="klick">
+<h3> Klick </h3>
+<table class="tablesaw tablesaw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+	<thead>
+		<tr>
+			<th class="title tablesaw-swipe-cellpersist" scope="col" data-tablesaw-priority="persist">Aktie</th>
+			<th scope="col" class>Senast</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">+/-</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">+/- %</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Köp</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Sälj</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Högst</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Lägst</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Volym</th>
+			<th scope="col" class=" tablesaw-swipe-cellhidden">Tid</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Precise Biometrics</td>
+			<td class>2,03</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">-0,12</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">-5,58 %</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">2,01</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">2,04</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">2,32</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">2,00</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">29 620 850</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">16:05</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Telia Company</td>
+			<td class>37,99</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">+0,24</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">+0,64 %</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">37,97</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">37,99</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">38,21</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">37,74</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">8 751 709</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">16:05</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">SSAB B</td>
+			<td class>33,58</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">-0,99</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">-2,86 %</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">33,58</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">33,60</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">35,36</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">33,17</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">7 628 291</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">16:06</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Eniro</td>
+			<td class>0,26</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">+0,02</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">+7,29 %</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,26</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,26</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,26</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,25</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">6 961 996</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">16:05</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Mavshack</td>
+			<td class>0,44</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">-0,05</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">-10,20 %</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,43</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,44</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,51</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,41</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">6 942 151</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">16:04</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Ericsson B</td>
+			<td class>54,40</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">+0,90</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">+1,68%</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">54,35</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">54,40</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">54,45</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">53,40</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">6 663 095</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">16:05</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Abelco Investment Group</td>
+			<td class>0,30</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,00</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,00 %</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,30</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,30</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,31</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,29</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">6 557 850</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">16:04</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">SEB A</td>
+			<td class>102,30</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">-1,70</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">-1,63 %</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">102,20</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">102,30</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">104,10</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">102,00</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">5 753 483</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">16:05</td>
+		</tr>
+		<tr>
+			<td class="title tablesaw-swipe-cellpersist">Fingerprint Cards B</td>
+			<td class>20,01</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">-0,00</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">0,00 %</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">20,00</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">20,02</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">20,24</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">19,86</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">4 714 118</td>
+			<td scope="col" class=" tablesaw-swipe-cellhidden">16:05</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+
+</div>
+
+
+</div>
+</body>
+</html>
