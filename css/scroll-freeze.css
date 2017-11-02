@@ -8,12 +8,20 @@
 
 }
 
-@media (min-width: 1700px) {
+.message {
+	text-align: center;
+	display: inline;;
+}
+
+@media (min-width: 1000px) {
   .table-scroll {
     width: fit-content;
   }
   .table-scroll table {
   	width: fit-content;
+  }
+  .message {
+  	display: none;
   }
 }
 
@@ -68,4 +76,5 @@
 col {
 	width: 5px;
 }
+
 
